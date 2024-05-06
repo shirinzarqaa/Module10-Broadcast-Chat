@@ -11,3 +11,9 @@ pada saat mengganti client dan server dengan port yang sama yaitu `8080` akan be
 pada saat port server `2000` dan port client `8080` terlihat bahwa port client mengalami crash karena tidak punya koneksi ke server berikut.
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
+**Experiment 2.3: Small changes, add IP and Port**
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+Perubahan yang dilakukan pada kode bin/server.rs adalah menambah informasi alamat IP pengirim ketika `bcast.tx` mengirim pesan ke setiap pelanggan. Informasi alamat IP tersebut disimpan ke dalam variabel addr.
